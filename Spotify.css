@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "lato", sans-serif;
+    overflow: hidden;
+    color: white;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: black;
+    height: 100vh;
+    width: 340px;
+    border-radius: 1rem;
+    margin: 0.5rem 0.5rem 0 0.25rem;
+
+}
+
+.main_window {
+
+    background-color: #121212;
+    height: 100vh;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+}
+
+.music_player {
+    background-color: black;
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    height: 72px;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin: 0.75rem;
+}
+
+.option {
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.option:hover {
+    opacity: 1;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.option i {
+    font-size: 1.25rem;
+    margin-right: 16px;
+}
+
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib_option a,
+i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.5rem, 0.75rem;
+    opacity: 0.7;
+
+}
+
+
+.lib_option i {
+    padding: 0.5rem 0.75rem;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin: 0.75rem;
+    opacity: 0.7;
+}
+
+.lib_option a,
+i:hover {
+    opacity: 1;
+}
+
+.icons:hover {
+    opacity: 1;
+}
+
+.box1 {
+    background-color: #232323;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+.box1_p1 {
+    font-size: 1.25rem;
+    font-weight: 550;
+    margin: 1.5rem 0 0 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.box1_p2 {
+    font-size: 1rem;
+    margin: 1.25rem 0 0 1.5rem;
+}
+
+.box1_btn1 {
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+    font-weight: 600;
+    height: 1.75rem;
+    margin: 1.5rem 0 0 1.5rem;
+
+}
+
+.box2 {
+    background-color: #232323;
+    height: 13rem;
+}
+
+.main_window {
+    margin: 1.25rem 0.5rem 0 0.25rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.sticky-nav {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons {
+    display: flex;
+    padding-right: 1.75rem;
+}
+
+.sticky-nav-icons img {
+    margin: 0 1rem 0 1rem;
+    font-size: 2.75rem;
+    background-color: #232323;
+    opacity: 0.7;
+    border-radius: 25%;
+
+}
+
+.sticky-nav-icons img:hover {
+    opacity: 1;
+    background-color: #2c2626c3;
+}
+
+.sticky-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+
+    margin: 1rem;
+}
+
+.dark-btn {
+    background-color: black;
+    color: white;
+    height: 2rem;
+    width: 7.5rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media(max-width: 1000px) {
+    .nav-disappear {
+        display: none;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-str img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-weight: 800;
+}
+
+.card-body {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.card-str {
+
+    width: 150px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    transition: 1s;
+}
+
+.card-str:hover {
+    background-color: #232323;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music_player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+
+}
+
+.playback-bar {
+    width: 50%;
+    background-color: #000000;
+
+}
+
+.player-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-bar {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 2.5rem;
+    opacity: 0.5;
+}
+
+.player-control-bar:hover {
+    opacity: 1;
+}
+
+.pause-btn {
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playbar {
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.playbar::-webkit-slider-runnable-track {
+    border-radius: 100px;
+    height: 0.25rem;
+    background-color: #ddd;
+
+
+}
+
+.playbar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
+
+.controls {
+    width: 25%;
+}
+
+.album-img img {
+    width: 3rem;
+    height: 3rem;
+    padding: 1.25rem;
+}
+
+.album-info {
+    display: flex;
+    align-items: center;
+}
+
+.song-info {
+    font-size: 0.75rem;
+}
+
+.artist {
+    opacity: 0.7;
+    margin-top: -6px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+}
+
+.like-icon {
+    margin-right: 1.75rem;
+}
+
+.like i {
+    margin-left: 1.75rem;
+}
+
+.like i:hover {
+    color: red;
+}
+
+.control-icons {
+    display: flex;
+    align-items: center;
+}
+
+.control-option {
+    margin-left: 1rem;
+}
+
+.vol-bar {
+    appearance: none;
+    border-radius: 100px;
+}
+
+.vol-bar::-webkit-slider-runnable-track {
+    border-radius: 100px;
+    height: 0.25rem;
+    background-color: #ddd;
+
+
+}
+
+.vol-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+.vol-bar::-webkit-slider-thumb:hover {
+    height: 1rem;
+    width: 1rem;
+    margin: -5px;
+}
